@@ -6,6 +6,7 @@ const Navbar = () => {
   const links = ['Beranda', 'Layanan', 'Galeri', 'Kontak', 'Karir'];
 
   return (
+
     <nav style={styles.navbar}>
         <div style={styles.container}>
             <div style={styles.logo}>
@@ -53,10 +54,10 @@ const styles = {
     },
     links: {
         display: 'flex',
-        alignItems: 'center',
         gap: '60px', // Space between links
-        flexGrow: 1, // Ensure links container grows to center align items
-        justifyContent: 'center', // Center align links
+        // alignItems: 'center',
+        // flexGrow: 1, // Ensure links container grows to center align items
+        // justifyContent: 'center', // Center align links
     },
     link: {
         padding: '10px 20px',
