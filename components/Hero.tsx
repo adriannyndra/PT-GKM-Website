@@ -8,14 +8,15 @@ const words = [
   },
   {
     text: "Terpercaya.",
-    className: "text-blue-300 dark:text-blue-300",
+    className: "text-mainLightBlue dark:text-red-400",
   },
 ];
 
 
 const Hero = () => {
   return (
-    <div className='h-screen'>
+    <>
+    <div>
         <img 
           src="/assets/hero1.png" 
           alt="Hero Image" 
@@ -34,12 +35,49 @@ const Hero = () => {
 
           <TypewriterEffectSmooth words={words} />
 
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-            {/* Buttons Here nanti */}
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-8">
+            <button 
+              style={{
+                border: '0px solid #000',   // Border color and thickness
+                backgroundColor: 'rgba(39, 148, 245, 0.6)', // Semi-transparent background
+                color: 'white',               // Text color
+                padding: '12px 22px',        // Padding
+                borderRadius: '15px',         // Rounded corners
+                cursor: 'pointer',           // Pointer cursor on hover
+                outline: 'none',             // Remove default focus outline
+                fontSize: '16px',            // Font size
+                transition: 'background-color 0.3s ease', // Smooth background transition
+              }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.3)'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.6)'}
+            >
+              Hubungi Kami
+            </button>
+            <button
+              style={{
+                border: '0px solid #000',   // Border color and thickness
+                backgroundColor: 'rgba(39, 148, 245, 0.6)', // Semi-transparent background
+                color: 'white',               // Text color
+                padding: '12px 22px',        // Padding
+                borderRadius: '15px',         // Rounded corners
+                cursor: 'pointer',           // Pointer cursor on hover
+                outline: 'none',             // Remove default focus outline
+                fontSize: '16px',            // Font size
+                transition: 'background-color 0.3s ease', // Smooth background transition
+              }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.3)'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.6)'}
+            >
+              Layanan Kami
+            </button>
           </div>
         </div>
 
     </div>
+
+    {/* Gradient Background */}
+    {/* <img src="/assets/home-gradient.png" alt="home gradient" style={{ width:'100%', position:'absolute', top:'790px' }} /> */}
+    </>
   )
 }
 

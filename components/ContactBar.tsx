@@ -3,7 +3,9 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactBar = () => {
   return (
-    <div className="flex justify-center bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+    // <div className="flex justify-center bg-gradient-to-r  from-mainLightBlue to-mainDarkBlue">
+    <div className="flex justify-center bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600"> 
+
       <div className="max-w-[1366px] w-full text-center">
 
         <ul className="flex flex-wrap justify-center gap-4 text-xs h-[30px] text-white">
