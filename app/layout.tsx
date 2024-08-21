@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PT Grahasindo Karya Mandiri",
+  title: "PT. Grahasindo Karya Mandiri",
   description: "Konsultan SLF Bangunan dan Gedung",
 };
 
@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/favicon.ico" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

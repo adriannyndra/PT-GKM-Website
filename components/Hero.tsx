@@ -1,6 +1,8 @@
 "use client";
 import React from 'react'
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
 
 const words = [
   {
@@ -8,7 +10,7 @@ const words = [
   },
   {
     text: "Terpercaya.",
-    className: "text-mainLightBlue dark:text-red-400",
+    className: "text-mainLightBlue dark:text-blue-400",
   },
 ];
 
@@ -16,6 +18,16 @@ const words = [
 const Hero = () => {
   return (
     <>
+
+    <FloatingWhatsApp 
+          phoneNumber="+6285853017373"
+          accountName="Admin"
+          avatar='/assets/logo.png'
+          statusMessage='+6285853017373'
+          chatMessage='Halo!🤝 Silahkan lakukan konsultasi bersama kami dengan mengirim pesan'
+        />
+
+
     <div>
         <img 
           src="/assets/hero1.png" 
@@ -28,11 +40,11 @@ const Hero = () => {
 
 
         {/* Typewriter Hero Text */}
-        <div className="flex flex-col items-center justify-center h-[40rem]  ">
+        <div className="flex flex-col items-center justify-center h-[40rem] ">
           <h4 className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base ">
             <b>PT. GRAHASINDO KARYA MANDIRI</b>
           </h4>
-
+          
           <TypewriterEffectSmooth words={words} />
 
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-8">

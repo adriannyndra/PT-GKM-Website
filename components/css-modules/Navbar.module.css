@@ -44,6 +44,47 @@
   .link:hover {
     background-color: #f0f0f0; /* Background color on hover */
   }
+
+  .linkContainer {
+    position: relative;
+  }
+  
+  .dropdown {
+    display: block; 
+    opacity: 0; /* Start with dropdown hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s; /* Animate opacity and position */
+    transform: translateY(-10px); /* Start slightly above */
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 220px;
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .linkContainer:hover .dropdown {
+    opacity: 1; /* Show dropdown */
+    visibility: visible;
+    transform: translateY(0); /* Move to original position */
+    display: block; /* Show the dropdown when hovering over the link container */
+  }
+  
+  .dropdownLink {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdownLink:hover {
+    background-color: #f0f0f0;
+  }
   
   .lang {
     width: 24px;
@@ -54,4 +95,6 @@
     display: flex;
     align-items: center;
   }
+  
+  
   
