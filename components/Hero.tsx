@@ -29,14 +29,14 @@ const Hero = () => {
         />
 
 
-    <div>
+    <div style={{ height: '100vh'}} >
         {/* Hero Image */}
         <img 
           src="/assets/hero1.png" 
           alt="Hero Image" 
-          className="w-full object-cover opacity-35 absolute inset-0 -z-10 mt-12"
-          style={{ height: '95%'}} />
-        <div className="absolute inset-0 bg-black -z-20 mt-12"></div>
+          className="w-full object-cover opacity-35 absolute inset-0 -z-10"
+          style={{ height: '100%'}} />
+        <div className="absolute inset-0 bg-black -z-20" style={{ height: '100%'}}></div>
         {/* <div className="absolute inset-0 bg-red-700 -z-20 mt-12"></div> */}
         {/* <div className="absolute inset-0 bg-blue-900 -z-20 mt-12"></div> */}
 
