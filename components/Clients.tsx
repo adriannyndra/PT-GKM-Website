@@ -14,7 +14,7 @@ const clients = [
 
 const Clients = () => {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden">
+    <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden">
       <h1 className="text-2xl uppercase tracking-wider mb-5 font-bold text-gray-700">KLIEN KAMI</h1>
       <InfiniteMovingCards items={clients} direction="right" speed="fast" pauseOnHover={false} />
     </div>
