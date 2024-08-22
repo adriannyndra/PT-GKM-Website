@@ -2,6 +2,7 @@
 import React from 'react'
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FaLocationArrow } from 'react-icons/fa6'
 
 
 const words = [
@@ -29,6 +30,7 @@ const Hero = () => {
 
 
     <div>
+        {/* Hero Image */}
         <img 
           src="/assets/hero1.png" 
           alt="Hero Image" 
@@ -40,9 +42,9 @@ const Hero = () => {
 
 
         {/* Typewriter Hero Text */}
-        <div className="flex flex-col items-center justify-center h-[40rem] ">
+        <div className="flex flex-col items-center justify-center h-[40rem] overflow-hidden">
           <h4 className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base ">
-            <b>PT. GRAHASINDO KARYA MANDIRI</b>
+            <b className='uppercase tracking-widest'>PT. GRAHASINDO KARYA MANDIRI</b>
           </h4>
           
           <TypewriterEffectSmooth words={words} />
@@ -51,7 +53,7 @@ const Hero = () => {
             <button 
               style={{
                 border: '0px solid #000',   // Border color and thickness
-                backgroundColor: 'rgba(39, 148, 245, 0.6)', // Semi-transparent background
+                backgroundColor: 'rgba(39, 148, 245, 0.8)', // Semi-transparent background
                 color: 'white',               // Text color
                 padding: '12px 22px',        // Padding
                 borderRadius: '15px',         // Rounded corners
@@ -61,26 +63,28 @@ const Hero = () => {
                 transition: 'background-color 0.3s ease', // Smooth background transition
               }}
               onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.3)'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.6)'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.8)'}
             >
-              Hubungi Kami
+              Hubungi Kami 
             </button>
             <button
               style={{
                 border: '0px solid #000',   // Border color and thickness
-                backgroundColor: 'rgba(39, 148, 245, 0.6)', // Semi-transparent background
+                backgroundColor: 'rgba(39, 148, 245, 0.8)', // Semi-transparent background
                 color: 'white',               // Text color
-                padding: '12px 22px',        // Padding
+                padding: '14px 24px',        // Padding
                 borderRadius: '15px',         // Rounded corners
                 cursor: 'pointer',           // Pointer cursor on hover
                 outline: 'none',             // Remove default focus outline
                 fontSize: '16px',            // Font size
                 transition: 'background-color 0.3s ease', // Smooth background transition
+                // display: 'flex'
               }}
               onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.3)'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.6)'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(39, 148, 245, 0.8)'}
             >
-              Layanan Kami
+              Layanan Kami 
+              {/* <FaLocationArrow /> */}
             </button>
           </div>
         </div>

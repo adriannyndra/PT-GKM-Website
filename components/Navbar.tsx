@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={styles.links}>
           {links.map((link, index) => (
             <div key={index} className={styles.linkContainer}>
-              <Link href={`/${link.name.toLowerCase()}`} className={styles.link}>
+              <Link href={link.name === "Beranda" ? "/" : `/${link.name.toLowerCase().replace(/\s+/g, '-')}`} className={styles.link}>
                 <b>{link.name}</b>
               </Link>
 
@@ -33,12 +33,11 @@ const Navbar = () => {
               {link.submenu.length > 0 && (
                 <div className={styles.dropdown}>
                   {link.submenu.map((sublink, subIndex) => (
-                    <Link href={`/${link.name.toLowerCase()}/${sublink.toLowerCase()}`} key={subIndex} className={styles.dropdownLink}>
+                    <Link href={`/${sublink.toLowerCase().replace(/\s+/g, '-')}`} key={subIndex} className={styles.dropdownLink}>
                       {sublink}
                     </Link>
                   ))}
                 </div>
-
               )}
             </div>
           ))}
