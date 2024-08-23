@@ -27,32 +27,16 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-6 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          {/* <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.15 },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence> */}
+          
 
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-mainRed bg-opacity-40 block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-mainLightBlue bg-opacity-5 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -61,7 +45,7 @@ export const HoverEffect = ({
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.15, delay: 0.4 },
+                  transition: { duration: 0.15, delay: 0.1 },
                 }}
               />
             )}
@@ -73,7 +57,7 @@ export const HoverEffect = ({
               alt={item.title}
               className="rounded-xl w-full h-40 object-cover"
             />
-            <CardTitle><h1 className="text-black">{item.title}</h1></CardTitle>
+            <CardTitle>{item.title}</CardTitle>
           </Card>
         </Link>
       ))}
@@ -92,11 +76,15 @@ export const Card = ({
     <div
       className={cn(
         "rounded-2xl h-full w-full p-4 overflow-hidden bg-whiteborder border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "shadow-[rgba(0,_0,_0,_0.16)_0px_10px_36px_0px,_rgba(0,_0,_0,_0.06)_0px_0px_0px_1px]",
         className
       )}
+      style={{
+        boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px', // Apply the box-shadow here
+      }}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div >{children}</div>
       </div>
     </div>
   );
@@ -110,7 +98,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("font-bold tracking-wide mt-4 text-black text-center", className)}>
       {children}
     </h4>
   );
