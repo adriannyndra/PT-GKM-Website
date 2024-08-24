@@ -16,12 +16,39 @@ const clients = [
   {
     imageUrl: "/assets/clients/castrol.png", 
   },
+  {
+    imageUrl: "/assets/clients/europacific-partners.png", 
+  },
+  {
+    imageUrl: "/assets/clients/radjak-hospital.png", 
+  },
+  {
+    imageUrl: "/assets/clients/rsiamelati-magetan.png", 
+  },
+  {
+    imageUrl: "/assets/clients/cj-korea-express.png", 
+  },
+  {
+    imageUrl: "/assets/clients/erha-ultimate.png", 
+  },
+  {
+    imageUrl: "/assets/clients/pt-indolakto.png", 
+  },
+  {
+    imageUrl: "/assets/clients/pt-jatim-autocomp.png", 
+  },
+  {
+    imageUrl: "/assets/clients/mitra-keluarga.png", 
+  },
+  {
+    imageUrl: "/assets/clients/ihc-rs.png", 
+  },
 ];
 
 const Clients = () => {
   return (
     <>
-      <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden mb-60">
+      <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden mb-10">
         <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">KLIEN KAMI</h1>
         <hr  style={{
         width: '100px',
@@ -29,7 +56,7 @@ const Clients = () => {
         marginBottom: '50px',
         backgroundColor: '#1D73BE',
         border: 'none', }} />
-        <InfiniteMovingCards items={clients} direction="right" speed="fast" pauseOnHover={false} />
+        <InfiniteMovingCards items={clients} direction="right" speed="normal" pauseOnHover={false} />
       </div>
 
       {/* Red Line */}

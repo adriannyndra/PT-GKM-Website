@@ -21,46 +21,47 @@ export const projects = [
       "/assets/services/konsultan-bangunan.png",
     link: "https://stripe.com",
   },
-  // {
-  //   title: "Konsultan Pemetaan",
-  //   imageUrl:
-  //     "/assets/default.jpg",
-  //   link: "https://stripe.com",
-  // },
+  {
+    title: "Konsultan Pemetaan",
+    imageUrl:
+      "/assets/services/konsultan-pemetaan.png",
+    link: "https://stripe.com",
+  },
   {
     title: "Konsultan Andalalin",
     imageUrl:
     "/assets/services/konsultan-andalalin.png",
     link: "https://stripe.com",
   },
-  // {
-  //   title: "Konsultan Lingkungan",
-  //   imageUrl:
-  //   "/assets/default.jpg",
-  //   link: "https://stripe.com",
-  // },
+  {
+    title: "Konsultan Lingkungan",
+    imageUrl:
+    "/assets/services/konsultan-lingkungan.png",
+    link: "https://stripe.com",
+  },
   {
     title: "Konsultan Struktur",
     imageUrl:
     "/assets/services/konsultan-struktur.jpg",
     link: "https://stripe.com",
   },
-  // {
-  //   title: "Konsultan Perencanaan",
-  //   imageUrl:
-  //   "/assets/default.jpg",
-  //   link: "https://stripe.com",
-  // },
-  // {
-  //   title: "Konsultan Manajemen Konstruksi / Pengawasan",
-  //   imageUrl:
-  //   "/assets/default.jpg",
-  //   link: "https://stripe.com",
-  // },
+  {
+    title: "Konsultan Perencanaan",
+    imageUrl:
+    "/assets/services/konsultan-perencanaan.jpg",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Konsultan Manajemen Konstruksi / Pengawasan",
+    imageUrl:
+    "/assets/default.jpg",
+    link: "https://stripe.com",
+  },
 ];
 
 const Services = () => {
   return (
+    <>
     <div className="flex flex-col items-center justify-center mb-[5rem] overflow-hidden">
         <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">Layanan Kami</h1>
         <hr  style={{
@@ -74,6 +75,20 @@ const Services = () => {
           <HoverEffect items={projects} />
         </div>
     </div>
+      {/* <img
+        src="/assets/background-item2.png"
+        style={{
+          position: 'absolute',
+          top: '150%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          opacity: '0.3',
+          zIndex: 1,
+          maxWidth: '90%',
+        }}
+        alt=""
+      /> */}
+    </>
   )
 }
 

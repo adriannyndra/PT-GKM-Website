@@ -91,8 +91,9 @@ const Hero = () => {
 
     </div>
 
-    {/* Gradient Background */}
+    {/* Gradient / Image Background */}
     {/* <img src="/assets/home-gradient.png" alt="home gradient" style={{ width:'100%', position:'absolute', top:'790px' }} /> */}
+
     </>
   )
 }

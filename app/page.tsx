@@ -4,6 +4,8 @@ import ContactBar from "@/components/ContactBar";
 import Clients from "@/components/Clients";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
+import PortfolioCount from "@/components/PortfolioCount";
+
 
 
 import Image from "next/image";
@@ -17,6 +19,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Services />
+        <PortfolioCount />
 
         {/* Keunggulan Kami */}
         <div className="flex flex-col items-center justify-center mb-[4rem] overflow-hidden">
@@ -27,13 +30,13 @@ export default function Home() {
             // marginBottom: '50px',
             backgroundColor: '#1D73BE',
             border: 'none', }} />
-          <img src="/assets/keunggulan-bg.jpeg" alt="keunggulan" />
-          <hr  style={{
+          <img src="/assets/keunggulan-bg.jpeg" alt="keunggulan" className="rounded-[80px]" />
+          {/* <hr  style={{
             width: '100%',
             height: '8px',
             // marginTop: '5px',
             backgroundColor: '#E00113',
-            border: 'none', }} />
+            border: 'none', }} /> */}
         </div>
 
         <Clients/>
