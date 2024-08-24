@@ -48,7 +48,7 @@ const clients = [
 const Clients = () => {
   return (
     <>
-      <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden mb-10">
+      <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden mb-[8rem]">
         <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">KLIEN KAMI</h1>
         <hr  style={{
         width: '100px',

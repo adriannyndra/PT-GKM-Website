@@ -7,7 +7,7 @@ const Navbar = () => {
   const links = [
     { name: "Beranda", submenu: ["Tentang Kami", "Struktur Organisasi", "Klien Kami"] },
     { name: "Layanan", submenu: ["Izin SLF", "Alur Pelayanan SLF", "Layanan Pengurusan"] },
-    { name: "Galeri", submenu: [] },
+    { name: "Portfolio", submenu: [] },
     { name: "Kontak", submenu: [] },
     { name: "Karir", submenu: [] },
   ];

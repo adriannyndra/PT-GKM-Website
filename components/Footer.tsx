@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaEnvelope } from 'react-icons/fa6'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Footer = () => {
   return (
@@ -25,6 +26,7 @@ const Footer = () => {
           Copyright © 2024 Konsultan SLF Bangunan Dan Gedung - PT. Grahasindo Karya Mandiri : by PTGKM
         </span>
       </div>
+      
     </footer>
     
   )

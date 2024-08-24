@@ -22,7 +22,7 @@ export default function Home() {
         <PortfolioCount />
 
         {/* Keunggulan Kami */}
-        <div className="flex flex-col items-center justify-center mb-[4rem] overflow-hidden">
+        <div className="flex flex-col items-center justify-center mb-[8rem] overflow-hidden">
           <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">KEUNGGULAN KAMI</h1>
           <hr  style={{
             width: '100px',
