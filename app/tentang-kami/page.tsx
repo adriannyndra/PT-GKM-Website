@@ -26,7 +26,7 @@ export default function TentangKami() {
                 </div>
 
                 <p className="italic font-semibold text-2xl mt-4">
-                    "Menjadi yang terpercaya dan terdepan di Indonesia"
+                &quot;Menjadi yang terpercaya dan terdepan di Indonesia&quot;
                   </p>
 
                 <p className="mt-4 text-sm leading-relaxed">
