@@ -5,7 +5,7 @@ import Clients from "@/components/Clients";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 import PortfolioCount from "@/components/PortfolioCount";
-
+import { ServicesNew } from "@/components/ServicesNew";
 
 
 import Image from "next/image";
@@ -18,12 +18,17 @@ export default function Home() {
         <ContactBar/>
         <Navbar />
         <Hero />
-        <Services />
+        {/* <Services /> */}
+        <ServicesNew/>
         <PortfolioCount />
 
         {/* Keunggulan Kami */}
         <div className="flex flex-col items-center justify-center mb-[8rem] overflow-hidden">
-          <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">KEUNGGULAN KAMI</h1>
+          <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-mainDarkBlue"
+          style={{
+            textShadow: '2px 4px 4px rgba(0, 0, 0, 0.3)', // Custom text shadow
+          }}
+          >KEUNGGULAN KAMI</h1>
           <hr  style={{
             width: '100px',
             height: '10px',

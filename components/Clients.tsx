@@ -49,7 +49,11 @@ const Clients = () => {
   return (
     <>
       <div className="rounded-md flex flex-col bg-white items-center justify-center relative overflow-hidden mb-[8rem]">
-        <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-gray-700">KLIEN KAMI</h1>
+        <h1 className="text-3xl uppercase tracking-wider mb-5 font-bold text-mainDarkBlue"
+        style={{
+          textShadow: '2px 4px 4px rgba(0, 0, 0, 0.3)', // Custom text shadow
+        }}
+        >KLIEN KAMI</h1>
         <hr  style={{
         width: '100px',
         height: '10px',
