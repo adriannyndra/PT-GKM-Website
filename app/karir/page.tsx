@@ -6,13 +6,12 @@ import Footer from "@/components/Footer";
 
 
 
-
-export default function Layanan() {
+export default function Karir() {
     return (
       <main>
         <ContactBar/>
         <Navbar />
-        <HeaderBreadcrumbs currentLocation="Layanan"/>   
+        <HeaderBreadcrumbs currentLocation="Karir"/>   
         <div className="flex justify-center mt-16 mb-16">
 
           {/* Content */}

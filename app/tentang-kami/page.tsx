@@ -22,8 +22,7 @@ export default function TentangKami() {
               <div className="w-[50%] pr-10">
                 <div className="border-l-4 border-mainRed pl-4">
                   <span className="text-sm text-[#70757a] font-medium">PT. GRAHASINDO KARYA MANDIRI</span>
-                  <h1 className="text-4xl font-bold text-mainDarkBlue  mt-2">TENTANG KAMI</h1>
-                  
+                  <h1 className="text-4xl font-bold text-mainDarkBlue  mt-2">TENTANG KAMI</h1>             
                 </div>
 
                 <p className="italic font-semibold text-2xl mt-4">
